@@ -211,12 +211,7 @@ embeddings/
 3. **Quality Impact**: Q30 filtering significantly reduces dataset size but improves classification accuracy
 4. **Performance**: Both models achieve high accuracy (>88%) demonstrating feasibility of genomic-based cancer classification
 
-## ⚠️ Limitations & Future Work
-
-### Current Limitations
-- Generalization across populations not extensively tested
-- Limited to binary classification (cancer vs. non-cancer)
-- Requires high-quality sequencing data (Q30 threshold)
+## Future Work
 
 ### Future Directions
 - Multi-class cancer type classification
