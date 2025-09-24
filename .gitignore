@@ -1,0 +1,418 @@
+# Breast Cancer DNA Classification Project - .gitignore
+
+# ========================
+# GENOMIC DATA FILES
+# ========================
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+
+# Processed genomic data
+*.parquet
+*.feather
+*.hdf5
+*.h5
+*.zarr
+
+# Sequence alignments
+*.sam
+*.bam
+*.bai
+*.bed
+*.bedgraph
+*.bigwig
+*.bw
+
+# Reference genomes
+*.fa
+*.fasta
+*.fna
+*.fa.gz
+*.fasta.gz
+
+# Variant calling files
+*.vcf
+*.vcf.gz
+*.bcf
+
+# ========================
+# MACHINE LEARNING FILES
+# ========================
+# Model files
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.h5
+*.hdf5
+models/
+checkpoints/
+saved_models/
+
+# Embeddings and feature files
+embeddings/
+*.npy
+*.npz
+features/
+representations/
+
+# Training data splits
+train_data/
+test_data/
+validation_data/
+splits/
+
+# Preprocessed datasets
+processed_data/
+clean_data/
+filtered_data/
+batches/
+
+# ========================
+# EXPERIMENT TRACKING
+# ========================
+# Weights & Biases
+wandb/
+*.wandb
+
+# MLflow
+mlruns/
+mlflow-tracking/
+artifacts/
+
+# Optuna
+optuna-db/
+*.db
+study.pkl
+
+# TensorBoard logs
+logs/
+tensorboard_logs/
+tb_logs/
+
+# ========================
+# DATA DIRECTORIES
+# ========================
+# Raw data directories
+data/
+raw_data/
+datasets/
+sequences/
+genome_data/
+
+# Temporary data
+temp/
+tmp/
+cache/
+.cache/
+
+# Output directories
+output/
+results/
+reports/
+figures/
+plots/
+
+# ========================
+# PYTHON
+# ========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+conda-meta/
+
+# ========================
+# JUPYTER NOTEBOOKS
+# ========================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# Jupyter notebook outputs (optional - uncomment if you want to ignore outputs)
+# *.ipynb
+
+# ========================
+# IDE & EDITORS
+# ========================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ========================
+# SYSTEM FILES
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ========================
+# CLOUD & REMOTE
+# ========================
+# Azure
+.azure/
+*.publishsettings
+
+# AWS
+.aws/
+*.pem
+
+# SSH keys
+*.key
+id_rsa*
+id_ed25519*
+known_hosts
+
+# ========================
+# CONFIGURATION & SECRETS
+# ========================
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Configuration files with secrets
+config/secrets.yaml
+config/private.yaml
+secrets/
+credentials/
+
+# API keys and tokens
+*.token
+api_keys.txt
+credentials.json
+
+# ========================
+# LOGS & TEMPORARY FILES
+# ========================
+# Log files
+*.log
+logs/
+*.out
+*.err
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# Process IDs
+*.pid
+
+# ========================
+# DOCUMENTATION BUILD
+# ========================
+# Sphinx documentation
+docs/_build/
+docs/build/
+.readthedocs.yml
+site/
+
+# ========================
+# BENCHMARKING & PROFILING
+# ========================
+# Performance profiles
+*.prof
+*.profile
+profile_output*
+
+# Memory profiler
+*.mprofile
+
+# ========================
+# BIOINFORMATICS TOOLS
+# ========================
+# BLAST databases
+*.nhr
+*.nin
+*.nog
+*.nsd
+*.nsi
+*.nsq
+
+# Bowtie/BWA indices
+*.bt2
+*.bt2l
+*.fai
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+
+# STAR indices
+*_STAR_*
+
+# ========================
+# LARGE FILES PATTERNS
+# ========================
+# Files larger than 100MB (adjust as needed)
+# Use git-lfs for version control of large files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# ========================
+# PROJECT SPECIFIC
+# ========================
+# SRA Toolkit cache
+ncbi/
+sra-cache/
+
+# DNABERT model cache (if cached locally)
+.transformers_cache/
+huggingface_cache/
+
+# Custom data processing outputs
+clean_forward_reads/
+clean_backward_reads/
+clean_forward_noncan/
+clean_backward_noncan/
+
+# Specific to this project's large datasets
+*/batches/*
+*_embeddings.npy
+*_ids.npy
+*_metadata.csv
+
+# UMAP visualization outputs
+umap_plots/
+visualization_outputs/
+
+# Model training outputs
+training_history/
+confusion_matrices/
+classification_reports/
+
+# ========================
+# KEEP THESE FILES (whitelist)
+# ========================
+# Important: Use ! to force include important files
+!README.md
+!requirements.txt
+!.gitignore
+!LICENSE
+!setup.py
+!pyproject.toml
+
+# Keep example data (small files only)
+!examples/sample_data.csv
+!tests/test_data/
+
+# Keep configuration templates
+!config/template_*.yaml
+!config/example_*.yaml
